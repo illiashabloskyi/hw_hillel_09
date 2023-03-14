@@ -1,0 +1,16 @@
+:root{
+    --color-main: #333;
+    --color-sub: #1E90FF;
+    --color-border: #0000FF;
+    --color-main-text: #808080;
+    --color-sub-text: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
