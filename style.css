@@ -52,6 +52,8 @@ li:hover > ul {
     position: absolute;
     border-bottom: none;
     background-color: var(--color-sub);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 li:hover li { 
@@ -82,8 +84,19 @@ li:hover .main-menu-sub-link{
     border-bottom: none;
 }
 
+li:hover .main-menu-sub-link.two{
+    border-bottom: 2px solid var(--color-border);
+    border-bottom-left-radius: 10px;
+}
+
 li:hover .sub-link{
     border-bottom: none;
+}
+
+li:hover .sub-link.two{
+    border-bottom: 2px solid var(--color-border);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .sub{
