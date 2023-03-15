@@ -1,7 +1,7 @@
 :root{
     --color-main: #333;
-    --color-sub: #1E90FF;
-    --color-border: #0000FF;
+    --color-sub: #0099FF;
+    --color-border: #0066ff;
     --color-main-text: #808080;
     --color-sub-text: #fff;
 }
@@ -13,4 +13,90 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    background: var(--color-main);
+    border-bottom: 6px solid var(--color-sub);
+  }
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: var(--color-main);
+  }
+
+li ul {
+    display: none; 
+}
+
+ul li a {
+  display: block;
+  padding: 20px 40px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--color-main-text);
+}
+
+a:hover { 
+    background: var(--color-sub);
+    color: var(--color-sub-text);
+}
+
+li:hover > ul {
+    display: block;
+    position: absolute;
+    border-bottom: none;
+    background-color: var(--color-sub);
+}
+
+li:hover li { 
+    border:2px solid var(--color-border);
+}
+
+li:hover a { 
+    background: var(--color-sub);
+    color: var(--color-sub-text); 
+}
+
+ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-menu-sub{
+    padding-top: 6px;
+}
+
+li:hover .main-menu-sub-link{
+    border-bottom: none;
+}
+
+li:hover .sub-link{
+    border-bottom: none;
+}
+
+.sub{
+    padding-right: 135px;
+}
+
+.main-menu-link .plus{
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.main-menu-text .plus{
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 145px;
 }
