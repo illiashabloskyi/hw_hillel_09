@@ -4,6 +4,7 @@
     --color-border: #0066ff;
     --color-main-text: #808080;
     --color-sub-text: #fff;
+    --color-hover: #00ccff;
 }
 
 *{
@@ -73,6 +74,10 @@ ul::after{
     border-top: 6px solid var(--color-sub);
 }
 
+.main-menu-sub-link:hover .main-menu-text{
+    background: var(--color-hover);
+}
+
 li:hover .main-menu-sub-link{
     border-bottom: none;
 }
@@ -84,6 +89,10 @@ li:hover .main-menu-sub-link.two{
 
 li:hover .sub-link{
     border-bottom: none;
+}
+
+.sub-link:hover .sub{
+    background: var(--color-hover);
 }
 
 li:hover .sub-link.two{
